@@ -53,7 +53,9 @@ public class App
             switch (option) {
                 case "login":
                     currentUser = buffer.trim();
-                    db.userLogin(dirPath, currentUser);
+                    db.userLogin(dirPath, currentUser, shoppingCart);
+
+
                     break;
                 case "save":
                     db.saveShoppingCart(dirPath, currentUser, shoppingCart);
